@@ -17,7 +17,7 @@ const [room,setRoom] = useState('');
 const [users, setUsers] = useState('');
 const [message, setMessage] = useState('');
 const [messages, setMessages] = useState([]);
-const ENDPOINT = 'localhost:5000';
+const ENDPOINT = 'https://realchat1.herokuapp.com/';
 useEffect( ()=>{
     /* eslint no-restricted-globals:0 */
 const {name, room} = queryString.parse(location.search);
